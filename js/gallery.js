@@ -89,7 +89,7 @@ link.ariaDisabled = true;
     img.alt = description;
   //  img.setAttribute('datasource', original);
 
-  img.dataset.datasource = original;
+  img.dataset.source = original;
     
    
 
@@ -117,7 +117,7 @@ function clickHandler(event){
 
    // document.querySelector(".modalImage").src 
 const instance = basicLightbox.create(`
-    <img src="${image.src}" width="800" height="600">
+    <img src="${image.dataset.source}" width="800" height="600">
 `)
 instance.show();    
 }
