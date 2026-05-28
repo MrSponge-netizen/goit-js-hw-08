@@ -107,6 +107,9 @@ gallery.appendChild(docFrag);
 
 
 function clickHandler(event){
+if (event.target.className == "gallery-link") {
+    event.preventDefault();
+  }
     if (event.target.className !== "gallery-image") {
     return; // користувач клікнув між кнопками
   }
